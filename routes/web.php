@@ -11,6 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TasksController@index');
+Route::resource('tasks','TasksController');
+
+
+/*
+Route::get('tasks/{id}','TasksController@show');
+Route::post('tasks','TasksController@store');
+Route::get('tasks/{id}','TasksController@supdate');
+Route::delete('tasks/{id}','TasksController@destroy');
+
+Route::get('tasks','TasksController@index')->name('tasks.index');
+Route::get('tasks/{id}','TasksController@create')->name('tasks.create');
+Route::get('tasks/{id}','TasksController@edit')->name('tasks.edit');
+*/
