@@ -9,12 +9,12 @@
             {!! Form::model($task, ['route' => 'tasks.store']) !!}
         
                 <div class="form-group">
-                    {!! Form::label('status','ステータス:') !!}
+                    {!! Form::label('status','今の状態:') !!}
                     {!! Form::text('status', null, ['class' => 'form-control']) !!}
                 </div>
         
                 <div class="form-group">
-                    {!! Form::label('content', 'メッセージ:') !!}
+                    {!! Form::label('content', '今日やること:') !!}
                     {!! Form::text('content', null, ['class' => 'form-control']) !!}
                 </div>
         
